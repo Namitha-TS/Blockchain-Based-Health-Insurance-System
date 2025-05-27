@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Insurance Claims BlockChain</title>
+
+    <!-- Bootstrap 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  -->
+    
+    <link href="css/jquery-ui.css" rel="stylesheet" >
+
+  </head>
+
+  <body id='main_body'>
+          <h1 class="demoHeaders" align="center">Insurance Claims BlockChain</h1>
+          <hr/>
+      <h3 id="account-number" class="demoHeaders"></h3>
+
+<!-- Tabs -->
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Administration</a></li>
+    <li><a href="#tabs-2">Open Claim</a></li>
+    <li><a href="#tabs-3">Appraise Claim</a></li>
+    <li><a href="#tabs-4">Approve Claim</a></li>
+  </ul>
+  
+  <h4 id="number-of-claims" class="demoHeaders">Number of Claims:  </h4>
+    <div id="tabs-1" align=center>
+      <h2 class="demoHeaders">Register Current Account</h2>
+      <br/><br/>
+
+      <button id="btn-reg-policy-holder" class="btn-register1" type="button" data-id="0">Register Policy Holder</button>
+      <button id="btn-reg-appraiser" class="btn-register2" type="button" data-id="0">Register Appraiser</button>
+      <button id="btn-reg-adjuster" class="btn-register3" type="button" data-id="0">Register Claims Adjuster</button>
+    </div>
+  
+  <div id="tabs-2" align="center">
+      <h2 class="demoHeaders">Open Insurance Claim</h2>
+      <br/><br/>
+
+      First Name: <input id="first-name" type="text">
+      Last Name: <input id="last-name" type="text">
+      <br/><br/>
+      Policy Num.: <input id="policy-num" type="text" size="53">
+      <br/><br/>
+      Description: <input id="description" type="text" size="53">
+
+      <br/><br/><br/>
+
+      <button id="btn-open" class="btn-open-claim" type="button" data-id="0">Open Claim</button>
+  </div>
+  
+  <div id="tabs-3" align="center">
+      <h2 class="demoHeaders">Appraise Insurance Claim</h2>
+      <br/><br/>
+
+      Claim Number: <input id="appraisal-claim-number" type="text" size="20">
+      &nbsp;&nbsp;&nbsp;
+      Appraisal Value: <input id="appraisal-value" type="text" size="10">
+
+      <br/><br/><br/>
+
+      <button id="btn-appraise" class="btn-appraise-claim" type="button" data-id="0">Appraise Claim</button>
+  </div>
+
+  <div id="tabs-4" align="center">
+      <h2 class="demoHeaders">Approve Insurance Claim</h2>
+      <br/><br/>
+
+      Claim Number: <input id="approval-claim-number" type="text" size="20">&nbsp;&nbsp;&nbsp;
+      Approval Value: <input id="approval-value" type="text" size="10">
+
+      <br/><br/><br/>
+
+      <button id="btn-approve" class="btn-approve-claim" type="button" data-id="0">Approve Claim</button>
+  </div>
+
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/vvh_ui.js"></script>
+
+<script>
+
+
+
+
+</script>
+  </body>
+</html>
